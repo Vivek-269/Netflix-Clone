@@ -47,6 +47,10 @@
     border-radius: 3px;
     margin: 0px 30px;
 }
+.Signin:hover{
+    background-color: rgb(160, 0, 0);
+}
+
 
 .discription {
     width: 100%;
@@ -71,12 +75,13 @@
 
 .email {
     padding: 10px 0px;
+    display: flex;
 }
 
 .discription input {
     font-size: 1.1rem;
     background-color: rgba(0, 0, 0, 0.527);
-    padding: 10px 15px;
+    padding: 11px 15px;
     width: 25rem;
     border-radius: 4px;
     margin: 0px 20px;
@@ -84,13 +89,16 @@
     color: white;
 }
 
-.discription button {
+.btn {
     background-color: red;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 9px;
     border: none;
     border-radius: 4px;
+}
+.btn:hover{
+    background-color: rgb(160, 0, 0);
 }
 
 .breakLine {
