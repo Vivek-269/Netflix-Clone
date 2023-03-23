@@ -11,16 +11,16 @@ export default function LandingPage() {
 
         }
         else {
-          e.preventDefault();
-          alert("Please enter the Email Address.");
+            e.preventDefault();
+            alert("Please enter the Email Address.");
         }
-      };
+    };
 
     return (
         <>
             <img src="./NetflixBanner.png" alt="banner" className="NetflixBanner" />
-            <div className="nav">
-                <div className='logoDiv'><img src="./NetflixLogo.png" alt="logo" className="netflixLogo" /></div>
+            <div className="navb">
+                <div className='logoDiv'><img src="./Netflix_logo.png" alt="logo" className="netflixLogo" /></div>
                 <div className='nav-items'>
                     <select name="language" className='dropdown'>
                         <option value="english">English</option>
@@ -34,10 +34,10 @@ export default function LandingPage() {
                 <h5>Watch anywhere. Cancel anytime.</h5>
                 <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
                 <form className='email' onSubmit={submitForm}>
-                    <input type="email" 
-                           value={email} 
-                           placeholder='Email Address:' 
-                           onChange={(e) => {setEmail(e.target.value);}}/>
+                    <input type="email"
+                        value={email}
+                        placeholder='Email Address:'
+                        onChange={(e) => { setEmail(e.target.value); }} />
                     <Link className='btn' type="submit" to='/netflix'>Get Started</Link>
                 </form>
             </div>

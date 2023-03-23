@@ -5,7 +5,7 @@
     background-color: transparent;
     position: relative;
     z-index: 10;
-    position: sticky
+    position: sticky;
 }
 
 .bannerDiv {
@@ -51,6 +51,12 @@
     position: absolute;
     top: 0;
     z-index: 4;
-    background: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0) 60% );
+    background: linear-gradient(to top, black 50px, rgba(0, 0, 0, 0) 60% );
     
+}
+.roww{
+    position: absolute;
+    z-index: 12;
+    display: flex;
+    overflow-x: hidden;
 }

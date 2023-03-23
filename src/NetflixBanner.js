@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './Netflix.css'
+import './NetflixBanner.css'
 import requests from './requests'
 import axios from 'axios';
+import Row from './Row';
 
 export default function Netflix() {
 
@@ -34,6 +35,7 @@ export default function Netflix() {
           <h6>{bannerData?.overview}</h6>
         </div>
         <div className='fadeBanner'></div>
+        <Row/>
       </div>
     </>
   )

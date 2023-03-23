@@ -1,6 +1,6 @@
 import './App.css';
 import LandingPage from './LandingPage';
-import Netflix from './Netflix'
+import NetflixBanner from './NetflixBanner'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<LandingPage />} />
-          <Route path='/netflix' element={<Netflix />} />
+          <Route path='/netflix' element={<NetflixBanner />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -4,21 +4,19 @@
     filter: brightness(0.5);
 }
 
-.nav {
+.navb {
     width: 100%;
     position: absolute;
     z-index: 10;
     top: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.logoDiv {
-    width: 70%;
+    padding: 20px 50px;
 }
 
 .netflixLogo {
-    width: 15rem;
+    width: 10rem;
 }
 
 .nav-items {
