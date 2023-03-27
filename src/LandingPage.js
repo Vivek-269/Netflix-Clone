@@ -38,7 +38,7 @@ export default function LandingPage() {
                         value={email}
                         placeholder='Email Address:'
                         onChange={(e) => { setEmail(e.target.value); }} />
-                    <Link className='btn' type="submit" to='/netflix'>Get Started</Link>
+                    <Link className='btn' type="submit" to='/mainPage'>Get Started</Link>
                 </form>
             </div>
             <div className='breakLine'></div>

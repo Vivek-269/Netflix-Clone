@@ -1,7 +1,7 @@
 import './App.css';
 import LandingPage from './LandingPage';
-import NetflixBanner from './NetflixBanner'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainPage from './MainPage';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<LandingPage />} />
-          <Route path='/netflix' element={<NetflixBanner />} />
+          <Route path='/mainPage' element={<MainPage />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -2,25 +2,31 @@ import React, { useEffect, useState } from 'react'
 import './NetflixBanner.css'
 import requests from './requests'
 import axios from 'axios';
-import Row from './Row';
 
 export default function Netflix() {
 
   const [bannerData, setBannerData] = useState();
+  const [darknav, setdarkNav] = useState(false);
 
   useEffect(() => {
     async function getData() {
       const requestData = await axios.get(requests.fetchNetflixOriginals);
       setBannerData(requestData.data.results[Math.floor(Math.random() * requestData.data.results.length - 1)]);
-      console.log(requestData)
-
     }
     getData();
   }, []);
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      setdarkNav(true);
+    } else {
+      setdarkNav(false);
+    }
+  });
+
   return (
-    <>
-      <div className="nav">
+    <div className='netflixBanner' >
+      <div className={`nav sticky-top ${darknav && 'darkNav'}`}>
         <img src="./Netflix_logo.png" alt="NetflixLogo" height='40px' />
         <img src="./blocklogo.png" alt="blocklogo" width='40px' />
       </div>
@@ -34,10 +40,9 @@ export default function Netflix() {
           </div>
           <h6>{bannerData?.overview}</h6>
         </div>
-        <div className='fadeBanner'></div>
-        <Row/>
       </div>
-    </>
+      <div className='fadeBanner'></div>
+    </div>
   )
 }
 //1db733db761e3afcd044450d1d33beb4
