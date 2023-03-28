@@ -1,22 +1,3 @@
-.netflixBanner{
- 
-}
-.nav {
-    padding: 25px 40px;
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-    position: relative;
-    z-index: 20;
-    position: sticky;
-}
-.darkNav{
-    background-color: black;
-}
-.bannerDiv {
-
-}
-
 .banner {
     width: 100%;
     height: 100%;
@@ -28,6 +9,7 @@
 
 .bannerDiscription{
     position: relative;
+    z-index: 6;
     display: flex;
     flex-direction: column;
     color: white;
@@ -36,11 +18,10 @@
 
 }
 
-.button{
-    padding: 20px 0px;
-    
+.bttn{
+    padding: 20px 0px;  
 }
-.button button{
+.bttn button{
     padding: 5px 15px;
     margin-right: 40px;
     font-size: 1.1rem;
@@ -48,6 +29,10 @@
     background-color: rgba(0, 0, 0, 0.624);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(70, 70, 70, 0.493);
 }
 
 .fadeBanner {

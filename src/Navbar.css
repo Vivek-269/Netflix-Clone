@@ -1,0 +1,14 @@
+.nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: relative;
+    z-index: 20;
+    position: sticky;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+}
+.darkNav{
+    background-color: rgba(0, 0, 0, 0.708);
+}

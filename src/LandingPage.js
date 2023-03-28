@@ -34,7 +34,8 @@ export default function LandingPage() {
                 <h5>Watch anywhere. Cancel anytime.</h5>
                 <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
                 <form className='email' onSubmit={submitForm}>
-                    <input type="email"
+                    <input 
+                        type="email"
                         value={email}
                         placeholder='Email Address:'
                         onChange={(e) => { setEmail(e.target.value); }} />
